@@ -1,0 +1,30 @@
+/* Template card css */
+.template-card {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+    border-radius: 2px;
+}
+
+.template-card__head {
+    @apply p-4;
+    min-height: 10rem;
+}
+
+.template-card__head h3 {
+    @apply text-xl font-medium capitalize;
+    color: #333447;
+}
+
+.template-card__head p {
+    @apply mt-3 text-sm leading-5;
+    color: #3F3E3E;
+}
+
+.template-card__footer {
+    @apply p-4 text-sm;
+    background: #F9F9F9;
+}
+
+.template-card__footer a {
+    color: #08BD37;
+}

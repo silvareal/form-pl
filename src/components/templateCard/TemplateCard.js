@@ -1,9 +1,10 @@
 import React from "react";
+import "./templateCard.css";
 
 const TemplateCard = () => {
   return (
-    <div className="card-container">
-      <div className="p-3">
+    <div className="template-card">
+      <div className="template-card__head">
         <h3>Alumni membership form template</h3>
         <p>
           Engage your alumni network better with this alumni registration form
@@ -11,8 +12,8 @@ const TemplateCard = () => {
         </p>
       </div>
 
-      <div className="p-3">
-        <span>Use Template</span>
+      <div className="template-card__footer">
+        <a href="/">Use Template</a>
       </div>
     </div>
   );

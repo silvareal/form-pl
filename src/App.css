@@ -4,7 +4,52 @@
 
 @tailwind utilities;
 
-.card-container {
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
-  border-radius: 2px;
+
+@layer base {
+  .alert-bg {
+    background: #FFF4EA;
+  }
+
+  .alert-text {
+    color: #252525;
+  }
+
+  .text-help-main {
+    color: #3F3F3F;
+    @apply text-sm;
+  }
+
+  .text-help-sub {
+    color: #989898;
+    @apply text-sm;
+  }
+
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Circular Std';
+    src: url('./assets/font/CircularStd-BlackItalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+  }
+
+  @font-face {
+    font-family: 'Circular Std Book';
+    src: url('./assets/font/CircularStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 }
