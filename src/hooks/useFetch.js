@@ -1,5 +1,9 @@
-import { useEffect, useRef, useState, useReducer } from "react";
-import authHeader from "../store/services/auth-header";
+import {
+  useEffect,
+  useRef,
+  useState,
+  useReducer
+} from "react";
 
 const useFetch = (url) => {
   const cache = useRef({});
@@ -12,7 +16,6 @@ const useFetch = (url) => {
 
   const option = {
     method: "GET",
-    headers: authHeader(),
   };
 
   const [state, dispatch] = useReducer((state, action) => {
@@ -26,13 +29,13 @@ const useFetch = (url) => {
         return {
           ...initialState,
           status: "fetched",
-          data: action.payload,
+            data: action.payload,
         };
       case "FETCH_ERROR":
         return {
           ...initialState,
           status: "error",
-          error: action.payload,
+            error: action.payload,
         };
       default:
         return state;

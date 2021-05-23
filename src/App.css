@@ -10,6 +10,33 @@
     background: #FFF4EA;
   }
 
+  .input-search {
+    @apply h-10 px-8 pr-16 text-sm focus:outline-none;
+    border: 0.5px solid #BDBDBD;
+    background: none;
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  .input-dropdown {
+    @apply h-10 px-2 lg:px-8 pr-2 lg:pr-16 text-sm focus:outline-none  appearance-none cursor-pointer;
+    border: 0.5px solid #BDBDBD;
+    background: none;
+    width: 100%;
+    border-radius: 2px;
+  }
+
+  .input-dropdown__label {
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    background: #e5e5e5;
+    padding-left: .5em;
+    padding-right: .5em;
+    color: #8F8B8B;
+    font-size: .58rem;
+  }
+
   .alert-text {
     color: #252525;
   }
