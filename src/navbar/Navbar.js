@@ -1,6 +1,10 @@
 import React from "react";
 import CategoryDropdowSelect from "../components/dropdownSelect/CategoryDropdowSelect";
 const categories = ["Health", "E-commerce", "Education"];
+const date = ["Ascending", "Descending"];
+
+const order = ["Ascending", "Descending"];
+
 export default function Navbar() {
   return (
     <div className="py-5">
@@ -44,9 +48,8 @@ export default function Navbar() {
             <p className="text-help-sub">Sort By:</p>
             <div className="flex mt-0 lg:mt-2">
               <CategoryDropdowSelect title="Category" options={categories} />
-              <CategoryDropdowSelect title="Category" options={categories} />
-
-              <CategoryDropdowSelect title="Category" options={categories} />
+              <CategoryDropdowSelect title="Order" options={order} />
+              <CategoryDropdowSelect title="Date" options={date} />
             </div>
           </div>
         </div>

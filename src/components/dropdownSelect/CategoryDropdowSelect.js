@@ -9,9 +9,13 @@ export default function CategoryDropdowSelect({ title, options }) {
             {title}
           </label>
           <select id={title} className="input-dropdown">
-            <option className="pt-6">All</option>
+            <option value="" className="pt-6">
+              {title === "Category" ? "All" : "Default"}
+            </option>
             {options.map((option) => (
-              <option className="pt-6">{option}</option>
+              <option className="pt-6" value={option}>
+                {option}
+              </option>
             ))}
           </select>
           <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2">
